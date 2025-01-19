@@ -1,0 +1,52 @@
+<div [class.dark]="isDarkMode" class="transition-all duration-300">
+  <nav
+    class="flex items-center justify-between p-4 shadow-lg transition-all duration-300 bg-white dark:bg-gray-900"
+  >
+    <!-- Logo Section -->
+    <div class="text-xl font-bold text-gray-900 dark:text-white">
+      <img
+        src="/images/assets/asset 0.png"
+        class="w-200 cursor-pointer"
+        alt=""
+      />
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="flex space-x-6">
+      <li>
+        <a
+          routerLink="home"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-green-600 font-bold transition-colors"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="about"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-green-600 transition-colors"
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="contacts"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-green-600 transition-colors"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+
+    <!-- Dark Mode Toggle Button -->
+    <div>
+      <button
+        (click)="toggleDarkMode()"
+        class="px-4 py-2 text-sm font-semibold border rounded-md border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all"
+      >
+        {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
+      </button>
+    </div>
+  </nav>
+</div>

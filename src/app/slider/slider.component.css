@@ -1,0 +1,27 @@
+/* Ensure images fit and slider is responsive */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Indicator styles */
+.block {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.block:hover {
+  background-color: #6b7280; /* Tailwind's gray-500 */
+}
+
+.direction {
+  top: 100px !important;
+  left: -40px !important;
+  background-color: aqua;
+}
+
+.slider---1 {
+  background-image: url(../../../public/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+}
